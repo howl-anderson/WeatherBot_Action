@@ -21,3 +21,6 @@ pip install -r ./requirements.txt
 ```bash
 SENIVERSE_KEY=xxx ./start_sdk_server.bash
 ```
+
+## FAQ
+* 如果在使用机器人中遇到解析失败或者 SSL 错误或者超时错误，请重试几次，数据提供商 `心知天气` 的 API 很不稳定，后续考虑替换成其他供应商
