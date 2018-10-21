@@ -1,3 +1,4 @@
 *.pyc
 .idea/
 .DS_Store
+local_start_sdk_server.bash
