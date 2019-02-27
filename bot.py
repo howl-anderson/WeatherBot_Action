@@ -16,15 +16,15 @@ class ActionReportWeather(FormAction):
     RANDOMIZE = True
 
     @staticmethod
-    def required_fields():
-        return [
-            EntityFormField("address", "address"),
-            EntityFormField("date-time", "date-time"),
-        ]
+    def required_slots(tracker):
+        # type: () -> List[Text]
+        """A list of required slots that the form has to fill"""
+
+        return ["address", "date-time"]
 
     def name(self):
         # type: () -> Text
-        return "action_report_weather"
+        return "weather_form"
 
     def submit(self, dispatcher, tracker, domain):
         # type: (Dispatcher, DialogueStateTracker, Domain) -> List[Event]
